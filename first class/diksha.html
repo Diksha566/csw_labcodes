@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"</script>
+
+</head>
+
+<body>
+<h1>jQuery Example code </h1>
+<p><b>This line will get removed onve the following button is clicked.</b></p>
+
+<button id ="btn"> Hide</button>
+<script>
+$(document).ready(function(){
+$("#btn").click (function(){
+$("P").hide();
+
+});
+});
+
+</script>
+</body>
+</html>

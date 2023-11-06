@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+body{
+
+background-color: #F08080; 
+
+
+}
+
+P{
+color:#2C3539
+
+}
+
+#btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+    border-radius: 35px;	
+}
+
+
+
+
+
+
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+<h1>jQuery Example code </h1>
+<p><b>This line will get removed onve the following button is clicked.</b></p>
+<p><h4>What is the use of jQuery?</h4><br>
+jQuery is a lightweight, "write less, do more", JavaScript library. The purpose of jQuery is to make it much easier to use JavaScript on your website. jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code. 
+Some of the key points that support the answer for why to use jQuery: <br>
+
+It helps us to manipulate HTML and CSS<br>
+It helps us to manipulate DOM (Document Object Model) elements<br>
+Provides event methods to trigger and respond to an events on a html page such as mouse click, keypress etc.<br>
+Implements AJAX calls.<br>
+Using jQuery (JavaScript library) on HTML page: There are several ways to start using it on your website.<br>
+
+Use the Google-hosted/Microsoft-hosted content delivery network (CDN) to include a version. Or
+Download it from official website jQuery.com and host it on your server or local filesystem.
+<h4>Advantages:<br></h4>
+Wide range of plug-ins that allows developers to create plug-ins on top of the JavaScript library.
+Large development community.<br>
+It is a lot easier to use compared to standard javascript and other javascript libraries.
+It lets users develop Ajax templates with ease. Ajax enables a sleeker interface where actions can be performed on pages without requiring the entire page to be reloaded.<br>
+Being Light weight and a powerful chaining capabilities makes it more strong.<br>
+<h4>Disadvantages:<br></h4>
+While jQuery has an impressive library in terms of quantity, depending on how much customization you require on your website. The functionality may be limited thus using raw javascript may be inevitable in some cases.
+The JQuery javascript file is required to run the commands, while the size of this file is relatively small (25-100KB depending on the server). It is still a strain on the client computer and maybe your web server as well if you intend to host the script on your own web server.<br><h5>~desgined by diksha jethwa</h5></P>
+
+
+<button id ="btn"> Hide</button>
+<script>
+$(document).ready(function(){
+$("#btn").click (function(){
+$("p").hide();
+
+});
+});
+
+</script>
+</body>
+</html>
