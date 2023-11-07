@@ -1,0 +1,39 @@
+body{
+    background-color: darkslateblue;
+}
+
+h1{
+    color: rgb(255, 145, 0);
+}
+
+p{
+    font-size: large;
+    color: rgb(255, 241, 231);
+}
+
+#para{
+    color: rgb(255, 187, 0);
+}
+
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    75% {
+      font-size: 100%;
+      margin-left: 25%;
+      width: 150%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
