@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function() {
+    $("#second").hide();
+    //$(this).hide(); -here htis means the current element
+
+});
+
+});
+</script>
+
+</head>
+<body>
+    <h2>this example demostrate elenment selector</h2>
+  <p1>
+    this first paragraph is about to disapper by jquery-3 <br>
+  </p1>
+
+  <p2 id="second">
+    the second pargraph is not goging to disapper
+  </p2 >
+
+  <button class="btn">
+    click here to disapper the first paragraph
+  </button>
+</body>
+</html>
