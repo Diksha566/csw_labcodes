@@ -13,9 +13,7 @@
             
         }
 
-        #1,#2,#3{
-            padding: 10px;
-        }
+    
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,34 +21,29 @@
     <script src="jquery-3.7.1.min.js"></script>
 
 <script>
+    
 $(document).ready(function(){
-$("#flip").click(function(){
-$("#pannel").slideDown();
-$("#2").fadeIn(2000);
-$("#3").toggle();
+$("button").click(function(){
+        $("div").animate({ opacity:'0.2', height:'100px'}, "slow");
+        $("div").animate({ opacity:'0.2', width:'100px'}, "fast");
+        $("div").animate({ opacity:'0.2', height:'100px'}, "fast");
+        $("div").animate({ opacity:'0.2', width:'100px'}, "slow");
+        div.animate({fontSize:'2em'}, "slow")
+
 });
 
 });
+
 </script>
 
 </head>
 <body>
-  <p>applying fadein effect on each box with diff color</p>
-
 <button>Hit the button to get fadingIn effect</button> <br><br>
 
-<div id="1" style="width: 40px; height: 60px; display: none;background-color: coral;">
-
+<div style="width: 40px; height: 60px;background-color: rgb(227, 23, 23);">
 </div> <br>
 
-<div id="pannel" style="width: 40px; height: 60px; display: none;background-color: rgb(80, 83, 255);">
-hii
-</div> <br>
 
-<div id="flip" style="width: 40px; height: 60px; background-color: rgb(255, 80, 182);">
-    heklo
-
-</div> <br>
   
 </body>
 </html>
