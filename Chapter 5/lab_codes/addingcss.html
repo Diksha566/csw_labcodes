@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide slideDown</title>
+    <script src="jquery-3.7.1.min.js"></script>
+
+<script>
+    
+$(document).ready(function(){
+$("button").click(function(){
+    $("#p1").css("background-color", "red");
+    
+    $("#p2").css("background-color", "blue");
+
+    
+    $("#p3").css("background-color", "pink");
+
+
+   // alert("Background color= " + $("#p1").css("background-color"));
+   // alert("Background color= " + $("#p2").css("background-color"));    
+   // alert("Background color= " + $("#p3").css("background-color"));
+       
+  
+});
+
+});
+
+
+
+</script>
+
+
+
+</head>
+<body>
+
+<p id="p1" style="background-color: chocolate;">this is paragraph</p>
+<p id="p2" style="background-color: cornflowerblue;">this is paragraph</p>
+<p id="p3" style="background-color: darkolivegreen;">this is paragraph</p>
+    
+<button>Hit the button</button> <br><br>
+
+
+  
+</body>
+</html>

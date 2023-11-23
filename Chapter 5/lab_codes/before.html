@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+
+<script>
+    
+$(document).ready(function(){
+$("#b1").click(function(){
+      $("img").before("<b>look at the following image</b> <br> <br>");
+    });
+
+    $("#b2").click(function(){
+      $("img").after("<br><br> the above image is beautiful");
+    });
+
+
+
+  
+});
+
+</script>
+
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, esse!</p>
+
+    <img src="mango.jpg" alt="jqery img" width="50px" height="50px"> <br> <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, esse!</p>
+
+
+<button id="b1">click on </button>
+<button id="b2">click on </button>
+
+
+
+</body>
+</html>

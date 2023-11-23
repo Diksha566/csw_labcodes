@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+
+<script>
+    
+$(document).ready(function(){
+$("#b1").click(function(){
+      $("p").append("<b>New content</b>");
+    });
+
+    $("#b2").click(function(){
+      $("ol").append("<li> soup </li>");
+    });
+
+
+
+  
+});
+
+</script>
+
+</head>
+<body>
+
+    <p>this is paragraph 1</p>
+    <p>this is paragraph 2</p>
+
+    <ol>
+        <li>mango</li>
+        <li>mango</li>
+        <li>mango</li>
+    </ol>
+
+<button id="b1">click on </button>
+<button id="b2">click on </button>
+
+
+
+</body>
+</html>
